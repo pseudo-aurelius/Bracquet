@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		476040CF2C69A6F6004D3223 /* BracquetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476040CE2C69A6F6004D3223 /* BracquetApp.swift */; };
-		476040D12C69A6F6004D3223 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476040D02C69A6F6004D3223 /* ContentView.swift */; };
 		476040D32C69A6F8004D3223 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476040D22C69A6F8004D3223 /* Assets.xcassets */; };
 		476040D62C69A6F8004D3223 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 476040D52C69A6F8004D3223 /* Preview Assets.xcassets */; };
+		476040DD2C69A7DA004D3223 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476040DC2C69A7DA004D3223 /* HeaderView.swift */; };
+		476040DF2C69A7F9004D3223 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476040DE2C69A7F9004D3223 /* HexColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		476040CB2C69A6F6004D3223 /* Bracquet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bracquet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		476040CE2C69A6F6004D3223 /* BracquetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BracquetApp.swift; sourceTree = "<group>"; };
-		476040D02C69A6F6004D3223 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		476040D22C69A6F8004D3223 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		476040D52C69A6F8004D3223 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		476040DC2C69A7DA004D3223 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		476040DE2C69A7F9004D3223 /* HexColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				476040CE2C69A6F6004D3223 /* BracquetApp.swift */,
-				476040D02C69A6F6004D3223 /* ContentView.swift */,
+				476040E02C69A800004D3223 /* Views */,
+				476040E12C69A81A004D3223 /* Utils */,
 				476040D22C69A6F8004D3223 /* Assets.xcassets */,
 				476040D42C69A6F8004D3223 /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				476040D52C69A6F8004D3223 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		476040E02C69A800004D3223 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				476040DC2C69A7DA004D3223 /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		476040E12C69A81A004D3223 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				476040DE2C69A7F9004D3223 /* HexColors.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476040D12C69A6F6004D3223 /* ContentView.swift in Sources */,
 				476040CF2C69A6F6004D3223 /* BracquetApp.swift in Sources */,
+				476040DF2C69A7F9004D3223 /* HexColors.swift in Sources */,
+				476040DD2C69A7DA004D3223 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
