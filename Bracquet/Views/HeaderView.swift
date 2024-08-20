@@ -10,7 +10,18 @@ import SwiftUI
 
 struct HeaderView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack() {
+
+            Image("Bracquet Icon")
+                .padding(.leading, 25)
+            
+            Spacer()
+            
+            Text("Bracquet")
+                .font(Font.custom("Inter-Bold", size: 60))
+                .foregroundColor(Color(hex: BraquetColors.pureBlack))
+                .padding(.trailing, 25)
+        }
     }
 }
 
