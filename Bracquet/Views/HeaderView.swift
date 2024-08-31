@@ -11,7 +11,6 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack() {
-
             Image("Bracquet Icon")
                 .padding(.leading, 25)
             
@@ -19,7 +18,7 @@ struct HeaderView: View {
             
             Text("Bracquet")
                 .font(Font.custom("Inter-Bold", size: 60))
-                .foregroundColor(Color(hex: BraquetColors.pureBlack))
+                .foregroundColor(Color(hex: BraquetColors.pureBlack.rawValue))
                 .padding(.trailing, 25)
         }
     }

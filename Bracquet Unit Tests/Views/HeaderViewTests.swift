@@ -58,7 +58,7 @@ final class HeaderViewTests: XCTestCase {
     
     func test_title_has_black_font_color() throws {
         // When the title is rendered, it should have a pure black font color (#000000)
-        let expectedColor = Color(hex: BraquetColors.pureBlack)
+        let expectedColor = Color(hex: BraquetColors.pureBlack.rawValue)
         let hStack = try headerView.inspect().hStack()
         
         let titleFontColor = try hStack.text(2).attributes().foregroundColor()
