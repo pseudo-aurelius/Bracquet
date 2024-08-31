@@ -34,6 +34,8 @@
 		47B65C452C6EABFE00F8076B /* HeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */; };
 		47B65C4D2C6EAD5700F8076B /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 47B65C4C2C6EAD5700F8076B /* ViewInspector */; };
 		47B65C502C6FFE2F00F8076B /* HexColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C4F2C6FFE2F00F8076B /* HexColorsTests.swift */; };
+		47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C522C7EA2AE00F8076B /* ButtonView.swift */; };
+		47B65C552C82660700F8076B /* ButtonViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C542C82660700F8076B /* ButtonViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		47B65C422C6EABFE00F8076B /* Bracquet-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bracquet-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTests.swift; sourceTree = "<group>"; };
 		47B65C4F2C6FFE2F00F8076B /* HexColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorsTests.swift; sourceTree = "<group>"; };
+		47B65C522C7EA2AE00F8076B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		47B65C542C82660700F8076B /* ButtonViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				476040DC2C69A7DA004D3223 /* HeaderView.swift */,
+				47B65C522C7EA2AE00F8076B /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */,
+				47B65C542C82660700F8076B /* ButtonViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +336,7 @@
 			files = (
 				476040CF2C69A6F6004D3223 /* BracquetApp.swift in Sources */,
 				476040DF2C69A7F9004D3223 /* HexColors.swift in Sources */,
+				47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */,
 				476040DD2C69A7DA004D3223 /* HeaderView.swift in Sources */,
 				47B65C3D2C6EA76800F8076B /* Styles.swift in Sources */,
 			);
@@ -341,6 +348,7 @@
 			files = (
 				47B65C452C6EABFE00F8076B /* HeaderViewTests.swift in Sources */,
 				47B65C502C6FFE2F00F8076B /* HexColorsTests.swift in Sources */,
+				47B65C552C82660700F8076B /* ButtonViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
