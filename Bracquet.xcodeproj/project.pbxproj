@@ -36,6 +36,9 @@
 		47B65C502C6FFE2F00F8076B /* HexColorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C4F2C6FFE2F00F8076B /* HexColorsTests.swift */; };
 		47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C522C7EA2AE00F8076B /* ButtonView.swift */; };
 		47B65C552C82660700F8076B /* ButtonViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C542C82660700F8076B /* ButtonViewTests.swift */; };
+		47B65C572C83569A00F8076B /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C562C83569A00F8076B /* StartupView.swift */; };
+		47D53A6D2C8CC5FE00C93946 /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D53A6C2C8CC5FD00C93946 /* ScreenUtils.swift */; };
+		47D53A6F2C8CCFD000C93946 /* StartupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D53A6E2C8CCFD000C93946 /* StartupViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		47B65C4F2C6FFE2F00F8076B /* HexColorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColorsTests.swift; sourceTree = "<group>"; };
 		47B65C522C7EA2AE00F8076B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		47B65C542C82660700F8076B /* ButtonViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewTests.swift; sourceTree = "<group>"; };
+		47B65C562C83569A00F8076B /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
+		47D53A6C2C8CC5FD00C93946 /* ScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
+		47D53A6E2C8CCFD000C93946 /* StartupViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,8 +150,8 @@
 		476040E02C69A800004D3223 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				476040DC2C69A7DA004D3223 /* HeaderView.swift */,
-				47B65C522C7EA2AE00F8076B /* ButtonView.swift */,
+				47B65C562C83569A00F8076B /* StartupView.swift */,
+				47B65C582C8356A300F8076B /* View Components */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 			children = (
 				476040DE2C69A7F9004D3223 /* HexColors.swift */,
 				47B65C3C2C6EA76800F8076B /* Styles.swift */,
+				47D53A6C2C8CC5FD00C93946 /* ScreenUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -196,8 +203,8 @@
 		47B65C4E2C6EAE4F00F8076B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */,
-				47B65C542C82660700F8076B /* ButtonViewTests.swift */,
+				47D53A702C8CCFDF00C93946 /* View Components */,
+				47D53A6E2C8CCFD000C93946 /* StartupViewTests.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +215,24 @@
 				47B65C4F2C6FFE2F00F8076B /* HexColorsTests.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		47B65C582C8356A300F8076B /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				476040DC2C69A7DA004D3223 /* HeaderView.swift */,
+				47B65C522C7EA2AE00F8076B /* ButtonView.swift */,
+			);
+			path = "View Components";
+			sourceTree = "<group>";
+		};
+		47D53A702C8CCFDF00C93946 /* View Components */ = {
+			isa = PBXGroup;
+			children = (
+				47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */,
+				47B65C542C82660700F8076B /* ButtonViewTests.swift */,
+			);
+			path = "View Components";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -337,7 +362,9 @@
 				476040CF2C69A6F6004D3223 /* BracquetApp.swift in Sources */,
 				476040DF2C69A7F9004D3223 /* HexColors.swift in Sources */,
 				47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */,
+				47D53A6D2C8CC5FE00C93946 /* ScreenUtils.swift in Sources */,
 				476040DD2C69A7DA004D3223 /* HeaderView.swift in Sources */,
+				47B65C572C83569A00F8076B /* StartupView.swift in Sources */,
 				47B65C3D2C6EA76800F8076B /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +375,7 @@
 			files = (
 				47B65C452C6EABFE00F8076B /* HeaderViewTests.swift in Sources */,
 				47B65C502C6FFE2F00F8076B /* HexColorsTests.swift in Sources */,
+				47D53A6F2C8CCFD000C93946 /* StartupViewTests.swift in Sources */,
 				47B65C552C82660700F8076B /* ButtonViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,9 +528,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pseudo-Aurelius.Bracquet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -529,9 +560,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Pseudo-Aurelius.Bracquet";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

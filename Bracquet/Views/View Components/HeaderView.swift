@@ -12,14 +12,11 @@ struct HeaderView: View {
     var body: some View {
         HStack() {
             Image("Bracquet Icon")
-                .padding(.leading, 25)
-            
-            Spacer()
-            
+
             Text("Bracquet")
                 .font(Font.custom("Inter-Bold", size: 60))
-                .foregroundColor(Color(hex: BraquetColors.pureBlack.rawValue))
-                .padding(.trailing, 25)
+                .foregroundColor(Color(hex: BracquetColors.pureBlack.rawValue))
+                .lineLimit(1)
         }
     }
 }

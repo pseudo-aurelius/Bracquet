@@ -32,7 +32,7 @@ final class HeaderViewTests: XCTestCase {
         XCTAssertTrue(logoExistence)
         
         // Validate title existence
-        let titleExistemce = try !hStack.text(2).isHidden()
+        let titleExistemce = try !hStack.text(1).isHidden()
         XCTAssertTrue(titleExistemce)
     }
     
@@ -52,16 +52,16 @@ final class HeaderViewTests: XCTestCase {
         let hStack = try headerView.inspect().hStack()
         
         // We are attempting to render the correct font
-        let titleFontName = try hStack.text(2).attributes().font().name()
+        let titleFontName = try hStack.text(1).attributes().font().name()
         XCTAssertEqual(titleFontName, expectedFontName)
     }
     
     func test_title_has_black_font_color() throws {
         // When the title is rendered, it should have a pure black font color (#000000)
-        let expectedColor = Color(hex: BraquetColors.pureBlack.rawValue)
+        let expectedColor = Color(hex: BracquetColors.pureBlack.rawValue)
         let hStack = try headerView.inspect().hStack()
         
-        let titleFontColor = try hStack.text(2).attributes().foregroundColor()
+        let titleFontColor = try hStack.text(1).attributes().foregroundColor()
         XCTAssertEqual(titleFontColor, expectedColor)
     }
 }

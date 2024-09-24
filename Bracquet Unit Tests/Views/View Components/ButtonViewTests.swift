@@ -10,17 +10,13 @@ import SwiftUI
 import ViewInspector
 @testable import Bracquet
 
-
-//      - Constructor test: callback passed successfully, works MUST
-//      - Frame should be 50 pixels no matter what MAYBE
-
 final class ButtonViewTests: XCTestCase {
     var expectedText: String?
-    var expectedColorType: BraquetColors?
+    var expectedColorType: BracquetColors?
     
     override func setUpWithError() throws {
         expectedText = "Click Me!"
-        expectedColorType = BraquetColors.primaryGreen
+        expectedColorType = BracquetColors.primaryGreen
     }
     
     override func tearDownWithError() throws {
@@ -53,7 +49,7 @@ final class ButtonViewTests: XCTestCase {
         let buttonView = ButtonView(text: expectedText!, color: expectedColorType!) {}
         
         let button = try buttonView.inspect().find(button: expectedText!)
-        let buttonColor = try button.find(ViewType.HStack.self).background(0).color(0).value()
+        let buttonColor = try button.find(ViewType.Text.self).background(0).color(0).value()
         XCTAssertEqual(buttonColor, expectedColor)
     }
     
@@ -78,7 +74,18 @@ final class ButtonViewTests: XCTestCase {
         
         let buttonView = ButtonView(text: expectedText!, color: expectedColorType!) {}
         
-        let buttonHeight = try buttonView.inspect().find(ViewType.HStack.self).fixedHeight()
+        let buttonHeight = try buttonView.inspect().find(ViewType.Text.self).fixedHeight()
         XCTAssertEqual(buttonHeight, expectedHeight)
+    }
+    
+    func test_button_width_is_dynamically_constrained() throws {
+        // Test that the width of the button is the max width allowed to a Swift UI view in
+        // the app, which itself is the full screen width less a margin.
+        let expectedMaxWidth: CGFloat = getMaximumViewWidth()
+        
+        let buttonView = ButtonView(text: expectedText!, color: expectedColorType!) {}
+        
+        let buttonMaxWidth = try buttonView.inspect().find(ViewType.Text.self).fixedWidth()
+        XCTAssertEqual(buttonMaxWidth, expectedMaxWidth)
     }
 }
