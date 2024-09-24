@@ -9,7 +9,7 @@
 import Foundation
 
 // Application Colors
-enum BraquetColors: String {
+enum BracquetColors: String {
     case pureBlack = "#000000"
     case pureWhite = "#FFFFFF"
     case backgroundWhite = "#EBEBEB"

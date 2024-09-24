@@ -22,7 +22,7 @@ final class HexColorsTests: XCTestCase {
         expectedBlue = 0
         expectedOpacity = 1
         
-        var (actualOpacity, actualRed, actualGreen, actualBlue) = convertHexToRGBA(hexString: BraquetColors.pureBlack.rawValue)
+        var (actualOpacity, actualRed, actualGreen, actualBlue) = convertHexToRGBA(hexString: BracquetColors.pureBlack.rawValue)
         
         XCTAssertEqual(actualOpacity, expectedOpacity)
         XCTAssertEqual(actualGreen, expectedGreen)
@@ -35,7 +35,7 @@ final class HexColorsTests: XCTestCase {
         expectedBlue = 204 / 255
         expectedOpacity = 1
         
-        (actualOpacity, actualRed, actualGreen, actualBlue) = convertHexToRGBA(hexString: BraquetColors.primaryBlue.rawValue)
+        (actualOpacity, actualRed, actualGreen, actualBlue) = convertHexToRGBA(hexString: BracquetColors.primaryBlue.rawValue)
         
         XCTAssertEqual(actualOpacity, expectedOpacity)
         XCTAssertEqual(actualGreen, expectedGreen)

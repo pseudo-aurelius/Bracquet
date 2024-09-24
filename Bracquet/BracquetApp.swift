@@ -11,7 +11,7 @@ import SwiftUI
 struct BracquetApp: App {
     var body: some Scene {
         WindowGroup {
-            HeaderView()
+            StartupView()
         }
     }
 }
