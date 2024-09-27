@@ -25,7 +25,7 @@ final class StartupViewTests: XCTestCase {
         // Test that the startup view provides a background to all its child views that is of color "background white"
         let expectedBackgroundColor = Color(hex: BracquetColors.backgroundWhite.rawValue)
         
-        let colorBackground = try startupView.inspect().zStack().color(0).value()
+        let colorBackground = try startupView.inspect().navigationView().zStack(0).color(0).value()
         XCTAssertEqual(colorBackground, expectedBackgroundColor)
     }
     
@@ -114,5 +114,23 @@ final class StartupViewTests: XCTestCase {
         let callToAction = try startupView.inspect().find(text: callToActionText)
         let callToActionAlignment = try callToAction.fixedAlignment().horizontal
         XCTAssertEqual(callToActionAlignment, expectedAlignment)
+    }
+    
+    func test_signup_button_tap_updates_navigation_state() throws {
+        // Test that tapping the signup button programatically triggers
+        // an update to its associated state variable
+        let stateTest = startupView!.on(\.didAppear) { startupView in
+            let initialNavigationState =  try startupView.actualView().navigateToSignup
+            XCTAssertFalse(initialNavigationState)
+            
+            let signupButton = try startupView.find(button: "Sign Up")
+            try signupButton.tap()
+            
+            let finalNavigationState = try startupView.actualView().navigateToSignup
+            XCTAssertTrue(finalNavigationState)
+        }
+        
+        ViewHosting.host(view: startupView!)
+        wait(for: [stateTest], timeout: 5)
     }
 }
