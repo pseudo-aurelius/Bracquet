@@ -31,6 +31,7 @@
 		476041042C69AAE9004D3223 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 476040F22C69AAE9004D3223 /* Inter-SemiBold.ttf */; };
 		476041052C69AAE9004D3223 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 476040F32C69AAE9004D3223 /* Inter-Bold.ttf */; };
 		47810D3F2CA38C730040BD87 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47810D3E2CA38C730040BD87 /* SignupView.swift */; };
+		47810D412CA749270040BD87 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47810D402CA749270040BD87 /* LoginView.swift */; };
 		47B65C3D2C6EA76800F8076B /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C3C2C6EA76800F8076B /* Styles.swift */; };
 		47B65C452C6EABFE00F8076B /* HeaderViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */; };
 		47B65C4D2C6EAD5700F8076B /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = 47B65C4C2C6EAD5700F8076B /* ViewInspector */; };
@@ -79,6 +80,7 @@
 		476040F32C69AAE9004D3223 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
 		476041072C69AB3A004D3223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		47810D3E2CA38C730040BD87 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		47810D402CA749270040BD87 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		47B65C3C2C6EA76800F8076B /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		47B65C422C6EABFE00F8076B /* Bracquet-Unit-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bracquet-Unit-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B65C442C6EABFE00F8076B /* HeaderViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewTests.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				47B65C562C83569A00F8076B /* StartupView.swift */,
 				47810D3E2CA38C730040BD87 /* SignupView.swift */,
+				47810D402CA749270040BD87 /* LoginView.swift */,
 				47B65C582C8356A300F8076B /* View Components */,
 			);
 			path = Views;
@@ -365,6 +368,7 @@
 				476040CF2C69A6F6004D3223 /* BracquetApp.swift in Sources */,
 				476040DF2C69A7F9004D3223 /* HexColors.swift in Sources */,
 				47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */,
+				47810D412CA749270040BD87 /* LoginView.swift in Sources */,
 				47D53A6D2C8CC5FE00C93946 /* ScreenUtils.swift in Sources */,
 				47810D3F2CA38C730040BD87 /* SignupView.swift in Sources */,
 				476040DD2C69A7DA004D3223 /* HeaderView.swift in Sources */,
