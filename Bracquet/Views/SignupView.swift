@@ -4,7 +4,7 @@
 //  This parent view will be the first screen that users
 //  see when beginning the process of creating a new account.
 //
-//  Created by Drew Curtin on 8/31/24.
+//  Created by Drew Curtin on 9/24/24.
 
 import SwiftUI
 

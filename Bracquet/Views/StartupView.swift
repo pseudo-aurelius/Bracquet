@@ -16,6 +16,7 @@ struct StartupView: View {
     // with onAppear handler below.
     internal var didAppear: ((Self) -> Void)?
     
+    @State var navigateToLogin = false
     @State var navigateToSignup = false
     
     var body: some View {
@@ -53,7 +54,7 @@ struct StartupView: View {
                         .padding(.bottom, 20)
                     
                     ButtonView(text: "Login", color: BracquetColors.primaryBlue) {
-                        
+                        navigateToLogin = true
                     }
                     .padding(.bottom, 5)
                     
@@ -67,6 +68,10 @@ struct StartupView: View {
                     
                     // These navigation links take up no space and are tied to the state
                     // variables manipulated by the button views
+                    NavigationLink(destination: LoginView(), isActive: $navigateToLogin) {
+                        EmptyView()
+                    }
+                    
                     NavigationLink(destination: SignupView(), isActive: $navigateToSignup) {
                         EmptyView()
                     }

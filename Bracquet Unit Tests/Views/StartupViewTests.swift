@@ -133,4 +133,22 @@ final class StartupViewTests: XCTestCase {
         ViewHosting.host(view: startupView!)
         wait(for: [stateTest], timeout: 5)
     }
+    
+    func test_login_button_tap_updates_navigation_state() throws {
+        // Test that tapping the login button programatically triggers
+        // an update to its associated state variable
+        let stateTest = startupView!.on(\.didAppear) { startupView in
+            let initialNavigationState =  try startupView.actualView().navigateToLogin
+            XCTAssertFalse(initialNavigationState)
+            
+            let signupButton = try startupView.find(button: "Login")
+            try signupButton.tap()
+            
+            let finalNavigationState = try startupView.actualView().navigateToLogin
+            XCTAssertTrue(finalNavigationState)
+        }
+        
+        ViewHosting.host(view: startupView!)
+        wait(for: [stateTest], timeout: 5)
+    }
 }
