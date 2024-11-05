@@ -39,12 +39,22 @@
 		47B65C532C7EA2AE00F8076B /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C522C7EA2AE00F8076B /* ButtonView.swift */; };
 		47B65C552C82660700F8076B /* ButtonViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C542C82660700F8076B /* ButtonViewTests.swift */; };
 		47B65C572C83569A00F8076B /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B65C562C83569A00F8076B /* StartupView.swift */; };
+		47CE88232CD85A4E00385AFF /* StartupViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE88222CD85A4E00385AFF /* StartupViewSnapshotTests.swift */; };
+		47CE88372CD874C500385AFF /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = 47CE88362CD874C500385AFF /* SnapshotTesting */; };
+		47CE883B2CD8780D00385AFF /* test_startup_view_rendering_common.StartupView_Baseline.png in Resources */ = {isa = PBXBuildFile; fileRef = 47CE883A2CD8780D00385AFF /* test_startup_view_rendering_common.StartupView_Baseline.png */; };
 		47D53A6D2C8CC5FE00C93946 /* ScreenUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D53A6C2C8CC5FD00C93946 /* ScreenUtils.swift */; };
 		47D53A6F2C8CCFD000C93946 /* StartupViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D53A6E2C8CCFD000C93946 /* StartupViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		47B65C462C6EABFE00F8076B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 476040C32C69A6F6004D3223 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 476040CA2C69A6F6004D3223;
+			remoteInfo = Bracquet;
+		};
+		47CE881D2CD83B6D00385AFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 476040C32C69A6F6004D3223 /* Project object */;
 			proxyType = 1;
@@ -88,6 +98,9 @@
 		47B65C522C7EA2AE00F8076B /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		47B65C542C82660700F8076B /* ButtonViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewTests.swift; sourceTree = "<group>"; };
 		47B65C562C83569A00F8076B /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
+		47CE88192CD83B6D00385AFF /* Bracquet Snapshot Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bracquet Snapshot Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CE88222CD85A4E00385AFF /* StartupViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewSnapshotTests.swift; sourceTree = "<group>"; };
+		47CE883A2CD8780D00385AFF /* test_startup_view_rendering_common.StartupView_Baseline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_startup_view_rendering_common.StartupView_Baseline.png; sourceTree = "<group>"; };
 		47D53A6C2C8CC5FD00C93946 /* ScreenUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtils.swift; sourceTree = "<group>"; };
 		47D53A6E2C8CCFD000C93946 /* StartupViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +121,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47CE88162CD83B6D00385AFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CE88372CD874C500385AFF /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -116,6 +137,7 @@
 			children = (
 				476040CD2C69A6F6004D3223 /* Bracquet */,
 				47B65C432C6EABFE00F8076B /* Bracquet Unit Tests */,
+				47CE881A2CD83B6D00385AFF /* Bracquet Snapshot Tests */,
 				476040CC2C69A6F6004D3223 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +147,7 @@
 			children = (
 				476040CB2C69A6F6004D3223 /* Bracquet.app */,
 				47B65C422C6EABFE00F8076B /* Bracquet-Unit-Tests.xctest */,
+				47CE88192CD83B6D00385AFF /* Bracquet Snapshot Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +255,31 @@
 			path = "View Components";
 			sourceTree = "<group>";
 		};
+		47CE881A2CD83B6D00385AFF /* Bracquet Snapshot Tests */ = {
+			isa = PBXGroup;
+			children = (
+				47CE88382CD877A500385AFF /* __Snapshots__ */,
+				47CE88222CD85A4E00385AFF /* StartupViewSnapshotTests.swift */,
+			);
+			path = "Bracquet Snapshot Tests";
+			sourceTree = "<group>";
+		};
+		47CE88382CD877A500385AFF /* __Snapshots__ */ = {
+			isa = PBXGroup;
+			children = (
+				47CE88392CD8780D00385AFF /* StartupViewSnapshotTests */,
+			);
+			path = __Snapshots__;
+			sourceTree = "<group>";
+		};
+		47CE88392CD8780D00385AFF /* StartupViewSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				47CE883A2CD8780D00385AFF /* test_startup_view_rendering_common.StartupView_Baseline.png */,
+			);
+			path = StartupViewSnapshotTests;
+			sourceTree = "<group>";
+		};
 		47D53A702C8CCFDF00C93946 /* View Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +305,8 @@
 			dependencies = (
 			);
 			name = Bracquet;
+			packageProductDependencies = (
+			);
 			productName = Bracquet;
 			productReference = 476040CB2C69A6F6004D3223 /* Bracquet.app */;
 			productType = "com.apple.product-type.application";
@@ -282,6 +332,27 @@
 			productReference = 47B65C422C6EABFE00F8076B /* Bracquet-Unit-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		47CE88182CD83B6D00385AFF /* Bracquet Snapshot Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47CE88212CD83B6D00385AFF /* Build configuration list for PBXNativeTarget "Bracquet Snapshot Tests" */;
+			buildPhases = (
+				47CE88152CD83B6D00385AFF /* Sources */,
+				47CE88162CD83B6D00385AFF /* Frameworks */,
+				47CE88172CD83B6D00385AFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47CE881E2CD83B6D00385AFF /* PBXTargetDependency */,
+			);
+			name = "Bracquet Snapshot Tests";
+			packageProductDependencies = (
+				47CE88362CD874C500385AFF /* SnapshotTesting */,
+			);
+			productName = "Bracquet Snapshot Tests";
+			productReference = 47CE88192CD83B6D00385AFF /* Bracquet Snapshot Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -299,6 +370,11 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 476040CA2C69A6F6004D3223;
 					};
+					47CE88182CD83B6D00385AFF = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+						TestTargetID = 476040CA2C69A6F6004D3223;
+					};
 				};
 			};
 			buildConfigurationList = 476040C62C69A6F6004D3223 /* Build configuration list for PBXProject "Bracquet" */;
@@ -312,6 +388,7 @@
 			mainGroup = 476040C22C69A6F6004D3223;
 			packageReferences = (
 				47B65C4B2C6EAD5700F8076B /* XCRemoteSwiftPackageReference "ViewInspector" */,
+				47CE882F2CD86E0600385AFF /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
 			);
 			productRefGroup = 476040CC2C69A6F6004D3223 /* Products */;
 			projectDirPath = "";
@@ -319,6 +396,7 @@
 			targets = (
 				476040CA2C69A6F6004D3223 /* Bracquet */,
 				47B65C412C6EABFE00F8076B /* Bracquet-Unit-Tests */,
+				47CE88182CD83B6D00385AFF /* Bracquet Snapshot Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,6 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47CE88172CD83B6D00385AFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CE883B2CD8780D00385AFF /* test_startup_view_rendering_common.StartupView_Baseline.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -388,6 +474,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47CE88152CD83B6D00385AFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47CE88232CD85A4E00385AFF /* StartupViewSnapshotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -395,6 +489,11 @@
 			isa = PBXTargetDependency;
 			target = 476040CA2C69A6F6004D3223 /* Bracquet */;
 			targetProxy = 47B65C462C6EABFE00F8076B /* PBXContainerItemProxy */;
+		};
+		47CE881E2CD83B6D00385AFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 476040CA2C69A6F6004D3223 /* Bracquet */;
+			targetProxy = 47CE881D2CD83B6D00385AFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -611,6 +710,53 @@
 			};
 			name = Release;
 		};
+		47CE881F2CD83B6D00385AFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pseudo-Aurelius.Bracquet-Snapshot-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bracquet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bracquet";
+			};
+			name = Debug;
+		};
+		47CE88202CD83B6D00385AFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Pseudo-Aurelius.Bracquet-Snapshot-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bracquet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bracquet";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -641,6 +787,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		47CE88212CD83B6D00385AFF /* Build configuration list for PBXNativeTarget "Bracquet Snapshot Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47CE881F2CD83B6D00385AFF /* Debug */,
+				47CE88202CD83B6D00385AFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -652,6 +807,14 @@
 				minimumVersion = 0.9.9;
 			};
 		};
+		47CE882F2CD86E0600385AFF /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 1.17.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -659,6 +822,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 47B65C4B2C6EAD5700F8076B /* XCRemoteSwiftPackageReference "ViewInspector" */;
 			productName = ViewInspector;
+		};
+		47CE88362CD874C500385AFF /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47CE882F2CD86E0600385AFF /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
